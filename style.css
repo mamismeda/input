@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(photo/denim.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: sans-serif;
+    display: flex;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 0 50px;
+    width: 750px;
+    position: relative;
+}
+.photo{
+    height: 550px;
+    background-color: rgb(190, 1, 190);
+    position: relative;
+}
+.photo img{
+    width: 300px;
+    height: 550px;
+    mix-blend-mode:multiply;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+}
+.discription{
+    height:550px;
+    width: 400px;
+    background-color: white;
+    padding: 50px 30px 30px 30px;
+}
+.discription p{
+    width: 200px;
+    margin: 40px 0;
+    color: rgb(95, 95, 95);
+}
+.main h4{
+    text-align: right;
+    margin: 30px 0 0 0;
+}
+
+span{
+    color:grey;
+}
+a{
+    color: rgb(184, 181, 181);
+    font-weight: 100;
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.child{
+    width: 100%;
+    height: 50px;
+    margin: 0 0 20px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style:solid;
+    transition: all 1s;
+    z-index: 2;
+}
+input:focus{
+  outline: none;
+  border-color: rgb(190, 1, 190);
+}
+.flex button{
+    width: 40%;
+    height: 60px;
+    font-size: 20px;
+    margin: 0 0 0 auto;
+    border-radius: 40px;
+    color:#fff;
+    border: 0;
+    background-color: rgb(190, 1, 190);
+    transition: all 0.5s;
+}
+.flex button:hover{
+    margin:-10px 0 10px auto;
+    box-shadow: 3px 3px 5px rgb(236, 5, 236) ;
+}
+
+.first{
+    width: 100%;
+    position: relative;
+}
+
+.first label{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    z-index: 1;
+    color: rgb(151, 150, 150);
+}
+.first input:focus~label {
+    position: absolute;
+    left:0 ;
+    top: 0;
+    font-size: 13px;
+    color: rgb(54, 54, 54);
+    transition: all 0.5s;
+}
