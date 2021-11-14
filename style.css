@@ -6,19 +6,21 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(photo/denim.png);
+    background-color: rgb(30, 62, 87);
     background-repeat: no-repeat;
     background-size:cover;
     font-family: sans-serif;
     display: flex;
+    flex-wrap: wrap;
+    min-height: 600px;
 }
 .main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 50px 0 0 50px;
-    width: 750px;
+    margin: 50px 0 0 0;
+    width: 70%;
     position: relative;
 }
 .photo{
@@ -36,7 +38,7 @@ body{
     height: 70px;
     position: absolute;
     top: 10px;
-    left: 35px;
+    left: 190px;
 }
 .logo img{
     width: 70px;
@@ -163,7 +165,8 @@ input:focus{
 }
 .jump{
     margin: 70px 0 0 0;
-    width: 250px;
+    width: 20%;
+    flex-wrap: wrap;
     position: relative;
 }
 .jump input{
@@ -184,7 +187,52 @@ input:focus{
     top: -20px;
     left: 0;
     font-size: 15px;
-    color: black;
+    color:#fff;
 }
+@keyframes mate
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.anim{
+   position: relative;
+   width: 300px;
+   height: 400px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+   background-color: black;
+   overflow: hidden;
+   border-radius: 20px;
+   margin: 70px 0 0 0;
+}
+.anim::before{
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 140%;
+    background: rgb(209,215,53);
+    background: linear-gradient(180deg, rgba(209,215,53,1) 0%, rgba(226,22,208,1) 100%);
+    animation: mate 4s linear infinite;
 
+}
+.anim::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: rgb(30, 62, 87);
+    border-radius: 16px;
+}
+.anim h3{
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
+}
 
