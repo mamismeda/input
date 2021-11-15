@@ -120,7 +120,7 @@ input:focus{
     position: absolute;
     left:0 ;
     top: 0;
-    font-size: 13px;
+    font-size: 0;
     color: rgb(54, 54, 54);
     transition: all 0.5s;
 }
@@ -149,7 +149,7 @@ input:focus{
     position: absolute;
     left:0 ;
     top: 0;
-    font-size: 13px;
+    font-size: 0;
     color: rgb(54, 54, 54);
     transition: all 0.5s;
 }
